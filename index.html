@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Trivia Game</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <header>
+
+        </header>
+
+        <div id="start-page">
+            <h1>Coding Trivia!</h1>
+            <button id="start"> START!</button>
+
+
+        </div>
+
+        <div id="main-content">
+            <div id="timer-content">
+                <h2 id="time-remaining">Time Remaining: 60 Seconds</h2>
+
+            </div>
+            <div id="questions">
+                <p id="question-one">What is HTML?</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-one" value="right" class="radiobutton"> Hyper Text Markup Language
+                    <input type="radio" name="question-one" value="wrong" class="radiobutton"> Hyper Text Language markup
+                    <input type="radio" name="question-one" value="wrong" class="radiobutton"> Hyper Markup Text Language 
+                </form>
+                <p id="question-two">What is Adam's Last Name</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-two" value="wrong" class="radiobutton"> Ahmed
+                    <input type="radio" name="question-two" value="wrong" class="radiobutton"> Abdi
+                    <input type="radio" name="question-two" value="right" class="radiobutton"> Ugas  
+                </form>
+                <p id="question-three">What is JSON?</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-three" value="wrong" class="radiobutton"> JSON is a methodology for using that format with cross-domain ajax requests
+                    <input type="radio" name="question-three" value="right" class="radiobutton"> JSON is a JavaScript Object Notation
+                    <input type="radio" name="question-three" value="wrong" class="radiobutton"> JSON is a Hyper Text Markup Language  
+                </form>
+                <p id="question-four">What Is a Full-Stack Developer?</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-four" value="wrong" class="radiobutton"> dude that codes 
+                    <input type="radio" name="question-four" value="right" class="radiobutton"> a full-stack developer is simply someone who is familiar with all layers in computer software development
+                    <input type="radio" name="question-four" value="wrong" class="radiobutton"> Web developer
+                </form>
+                <p id="question-five">What is an API?</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-five" value="right" class="radiobutton"> Application Programming Interface
+                    <input type="radio" name="question-five" value="wrong" class="radiobutton"> Application Platform Interface
+                    <input type="radio" name="question-five" value="wrong" class="radiobutton"> Application Puplicaton Interface
+                </form>
+                <p id="question-six">How is Adam doing in class</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-six" value="wrong" class="radiobutton"> A
+                    <input type="radio" name="question-six" value="wrong" class="radiobutton"> B
+                    <input type="radio" name="question-six" value="right" class="radiobutton"> C  
+                </form>
+                <p id="question-seven">Who do Adam go to for help first</p>
+                <form action="/action_page.php">
+                    <input type="radio" name="question-seven" value="wrong" class="radiobutton"> TA
+                    <input type="radio" name="question-seven" value="right" class="radiobutton"> Classmates
+                    <input type="radio" name="question-seven" value="wrong" class="radiobutton"> Teacher   
+                </form>
+                
+            </div>           
+
+        </div>
+        <div id="results">
+            <h1 id="results-header">Final Results!</h1>
+            <h3 id="correct">Questions Correct: </h3>
+            <h3 id="incorrect">Questions Incorrect: </h3>
+            <h3 id="not-answered">Questions Not Answered: </h3>
+            <button id="restart">Restart!</button>
+        </div>
+
+        <footer>
+
+        </footer>
+
+
+
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
